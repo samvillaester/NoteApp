@@ -20,10 +20,8 @@ export default function Index() {
           <Text style={styles.icon}>📝</Text>
         </View>
         <Text style={styles.title}>Mini Task App</Text>
-        <Text style={styles.subtitle}>Organize your tasks with ease</Text>
-        <Text style={styles.description}>
-          Keep track of all your pending, ongoing, and completed tasks in one place.
-        </Text>
+        <Text style={styles.subtitle}>Welcome! Manage your tasks efficeitly</Text>
+    
 
         <Pressable 
           style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]} 
@@ -74,13 +72,7 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.lg,
     textAlign: "center",
   },
-  description: {
-    fontSize: TYPOGRAPHY.body,
-    color: COLORS.textLight,
-    textAlign: "center",
-    marginBottom: SPACING.xxxl,
-    lineHeight: 24,
-  },
+  
   button: {
     backgroundColor: COLORS.primary,
     paddingHorizontal: SPACING.xxxl,

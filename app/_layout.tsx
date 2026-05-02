@@ -1,24 +1,83 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { Stack } from "expo-router";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+export default function RootLayout(){
+  return <Stack/>;
+}
 
-export const unstable_settings = {
-  anchor: '(tabs)',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import { COLORS, TYPOGRAPHY } from "@/lib/design";
+import { Stack } from "expo-router";
+
+export const screenOptions = {
+  headerStyle: {
+    backgroundColor: COLORS.primary,
+  },
+  headerTintColor: COLORS.textInverse,
+  headerTitleStyle: {
+    fontWeight: TYPOGRAPHY.semibold,
+    fontSize: TYPOGRAPHY.h4,
+  },
+  headerShadowVisible: false,
+  contentStyle: {
+    backgroundColor: COLORS.background,
+  },
 };
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack
+      screenOptions={screenOptions}
+    >
+      <Stack.Screen
+        name="index"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="tasks"
+        options={{
+          title: "My Tasks",
+        }}
+      />
+      <Stack.Screen
+        name="add-task"
+        options={{
+          title: "Add Task",
+        }}
+      />
+      <Stack.Screen
+        name="edit-task"
+        options={{
+          title: "Edit Task",
+        }}
+      />
+      <Stack.Screen
+        name="task-detail"
+        options={{
+          title: "Task Details",
+        }}
+      />
+    </Stack>
   );
 }
+*/

@@ -72,7 +72,7 @@ export default function Tasks() {
             style={({ pressed }) => [styles.detailButton, pressed && styles.buttonPressed]}
             onPress={() =>
               router.push({
-                pathname: "/task-detail",
+                pathname: "/(tabs)/tasks/task-detail",
                 params: {
                   id: item.id,
                   title: item.title,
@@ -107,7 +107,7 @@ export default function Tasks() {
 
       <Pressable
         style={({ pressed }) => [styles.addButton, pressed && styles.addButtonPressed]}
-        onPress={() => router.push("/add-task")}
+        onPress={() => router.push("/(tabs)/tasks/add-task")}
       >
         <Text style={styles.addButtonIcon}>+</Text>
         <Text style={styles.addButtonText}>Add Task</Text>

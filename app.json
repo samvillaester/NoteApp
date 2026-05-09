@@ -28,7 +28,7 @@
     "plugins": [
       "expo-router",
       [
-"expo-splash-screen",
+        "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
@@ -44,6 +44,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "32c8009f-99bb-4617-8b27-4192766557c2"
+      }
     }
   }
 }

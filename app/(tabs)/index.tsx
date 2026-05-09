@@ -25,7 +25,7 @@ export default function Index() {
 
         <Pressable 
           style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]} 
-          onPress={() => router.push("/tasks")}
+          onPress={() => router.push("/(tabs)/tasks/tasks") }
         >
           <Text style={styles.buttonText}>Open Tasks</Text>
         </Pressable>
